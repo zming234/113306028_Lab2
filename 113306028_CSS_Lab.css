@@ -1,0 +1,97 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* 當滑鼠移動到 .navbar a 上時變成藍色 */
+.navbar a:hover {
+    color: blue;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555; /* 下拉選單項目變色效果 */
+}
+
+/* 當滑鼠移動到 .dropdown 時顯示 .dropdown-content */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Media Queries */
+@media all {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media print {
+    body {
+        color: black;
+        background-color: white;
+    }
+}
