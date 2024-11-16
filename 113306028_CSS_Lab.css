@@ -39,7 +39,9 @@ header p {
     list-style-type: none;
     margin: 0;
 }
-
+.navbar a:hover {
+    color: blue;
+}
 .navbar li {
     position: relative;
 }
