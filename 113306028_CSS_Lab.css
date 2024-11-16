@@ -1,42 +1,43 @@
-/* Basic Reset */
+/* Reset margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Body styles */
 body {
-    font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    padding: 0;
 }
 
-/* Header Styling */
+/* Header Styles */
 header {
-    background-color: #007bff;
+    background-color: #3498db;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 1em;
 }
 
 header h1 {
-    font-family: 'Georgia', serif;
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin-bottom: 0.2em;
 }
 
-/* Navbar Styling */
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation Bar */
 .navbar {
-    background-color: #333;
-    overflow: hidden;
-}
-
-.navbar ul {
-    list-style-type: none;
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: center;
+    background-color: #333;
+    list-style-type: none;
+    margin: 0;
 }
 
 .navbar li {
@@ -44,48 +45,67 @@ header h1 {
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
     display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
 }
 
-/* 當滑鼠移動到 .navbar a 上時變成藍色 */
 .navbar a:hover {
-    color: blue;
+    background-color: #111;
 }
 
 /* Dropdown Menu */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #444;
+    background-color: #333;
     min-width: 160px;
-    top: 100%;
-    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
     color: white;
-    padding: 10px;
+    padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: left;
 }
 
 .dropdown-content a:hover {
-    background-color: #555; /* 下拉選單項目變色效果 */
+    background-color: #575757;
 }
 
-/* 當滑鼠移動到 .dropdown 時顯示 .dropdown-content */
-.dropdown:hover .dropdown-content {
-    display: block;
+/* Main Content */
+main {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+main a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
 }
 
 /* Media Queries */
 @media all {
     body {
-        font-size: 1em;
+        background-color: #ffffff;
     }
 }
 
